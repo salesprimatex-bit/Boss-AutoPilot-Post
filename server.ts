@@ -12,7 +12,7 @@ async function startServer() {
 
   app.use(express.json());
 
-  const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || "https://script.google.com/macros/s/AKfycbwMZHlASVo7b6BL77IB33CQ2gDA9QLksyRNLoiCNJSoSBi43bx3SBsBC3OTjYfr8MYG/exec?module=post";
+  const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || "https://script.google.com/macros/s/AKfycby0vnUAPywT0dVTI0NiHvurj_CtMFlTHSL55xxZ2onpp2Sw066_T5xbRuZPCFMKPnm6/exec?module=post";
 
   // Proxy GET (Fetch Task)
   app.get("/api/proxy-task", async (req, res) => {
