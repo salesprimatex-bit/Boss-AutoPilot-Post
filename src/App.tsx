@@ -120,7 +120,7 @@ export default function App() {
 
   const getScriptUrl = useCallback(() => {
     // @ts-ignore - import.meta.env is provided by Vite
-    return import.meta.env.VITE_GOOGLE_SCRIPT_URL || (typeof process !== 'undefined' ? process.env.GOOGLE_SCRIPT_URL : null) || "https://script.google.com/macros/s/AKfycbxrdI4dBNRt-i8stEvQfT6My27j4i5xk6fgPYXEltQsToTlHbipw5iZwlTo1A0fJg54/exec?module=post";
+    return import.meta.env.VITE_GOOGLE_SCRIPT_URL || (typeof process !== 'undefined' ? process.env.GOOGLE_SCRIPT_URL : null) || "https://script.google.com/macros/s/AKfycbwoxQ5Tl9Qj29jUiMu9935VN05NObQKZwf961Ev6AdoO9ZnNpHS9QdhhtQzHbL9PHaz/exec?module=post";
   }, []);
 
   const updateStatusProcessing = useCallback(async (row: number, sheetName?: string) => {
